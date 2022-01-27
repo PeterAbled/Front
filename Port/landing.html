@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+    <link rel="stylesheet" type="text/css" href="landing.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script>window.onload = () => {}</script>
+</head>
+<body>
+    <div class="container">
+        <div class="navi">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="side">
+            <div class="info">
+                <div class="info_Name"><h2>Hello, I am <i style="font-size:30px" id="name">Peter</i></h2></div>
+                <img src="image/side006.png" id="info_Name" alt="미모티콘">
+                <div class="like_content">
+                    <button class="like_Btn">
+                        <i class="fa fa fa-question" aria-hidden="true"></i>Like
+                    </button>
+                </div>
+            </div>
+            <div class="info_Left">
+                <p><i class="fas fa-phone-square-alt"> Call</i></p>
+                <p><i class="fas fa-envelope-open-text"> E-Mail</i></p>
+            </div>
+            <div class="info_Right">
+                <a href="tel:01044642462"><p>010 - 4464 - 2462</p></a>
+                <a href="mailto:spem361@naver.com"><p>spem361@naver.com</p></a>
+            </div>
+        </div>
+        <div class="header" id="about">
+            <div class="album">
+                <div class="slideShow">
+                    <img src="image/img001.jpg" alt="">
+                    <img src="image/img002.jpeg" alt="">
+                    <img src="image/img003.jpg" alt="">
+                    <img src="image/img004.jpg" alt="">
+                </div>
+            </div>
+            <div class="preBtn">
+                <button class="prev">PREV</button>
+                <button class="next">NEXT</button>
+            </div>
+            <script type="text/javascript" src="landing.js"></script>
+        </div>
+        <div class="content" id="service">
+            <div class="screen">
+                <div class="screen1_1">
+                    <p>OPEN</p>
+                </div>
+                <div class="screen1_2">
+                    <img src="image/img005.jpg">
+                </div>
+            </div>
+            <div class="screen1_text">
+                <h1>Mr. Son</h1>
+                <p>Lorem Inpum, Dolor abdius</p>
+            </div>
+        </div>
+        <div class="footer" id="contact">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>
