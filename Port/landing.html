@@ -10,41 +10,58 @@
     <script>window.onload = () => {}</script>
 </head>
 <body>
+    <div class="side">
+        <div class="info">
+            <div class="info_Name"><h2>Hello, I am <i style="font-size:30px" id="name">Peter</i></h2></div>
+            <img src="image/side006.png" id="info_Name" alt="미모티콘">
+            <div class="like_content">
+                <button class="like_Btn">
+                    <i class="fa fa fa-question" aria-hidden="true"></i>Like
+                </button>
+            </div>
+        </div>
+        <div class="info_Left">
+            <ul>
+                <li><i class="fas fa-mail-bulk fa-2x"></i></li>
+                <li><i class="fab fa-github-alt fa-2x"></i></li>
+                <li><i class="fab fa-instagram fa-2x"></i></li>
+            </ul>
+        </div>
+        <!-- <div class="info_Right">
+            <a href="tel:01044642462"><p>010 - 4464 - 2462</p></a>
+            <a href="mailto:spem361@naver.com"><p>spem361@naver.com</p></a>
+        </div> -->
+    </div>
     <div class="container">
         <div class="navi">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><button class="info_Btn" onclick="ONNO()">IN</button></li>
+                <script>
+
+                    let sideOF = 0;
+                    let sidePos = 0;
+                    const inBtn = document.querySelector("info_Btn")
+                    const sideBar = document.querySelector(".side")
+                    
+                    function ONNO() {
+                      if(sideOF == 0){
+                        sideBar.setAttribute('transform', 'translateX(30px)')
+                        sideOF += 1;
+                      }
+                    }</script>
+                <li><a href="loading.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Service</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="side">
-            <div class="info">
-                <div class="info_Name"><h2>Hello, I am <i style="font-size:30px" id="name">Peter</i></h2></div>
-                <img src="image/side006.png" id="info_Name" alt="미모티콘">
-                <div class="like_content">
-                    <button class="like_Btn">
-                        <i class="fa fa fa-question" aria-hidden="true"></i>Like
-                    </button>
-                </div>
-            </div>
-            <div class="info_Left">
-                <p><i class="fas fa-phone-square-alt"> Call</i></p>
-                <p><i class="fas fa-envelope-open-text"> E-Mail</i></p>
-            </div>
-            <div class="info_Right">
-                <a href="tel:01044642462"><p>010 - 4464 - 2462</p></a>
-                <a href="mailto:spem361@naver.com"><p>spem361@naver.com</p></a>
-            </div>
-        </div>
         <div class="header" id="about">
             <div class="album">
                 <div class="slideShow">
-                    <img src="image/img001.jpg" alt="">
-                    <img src="image/img002.jpeg" alt="">
-                    <img src="image/img003.jpg" alt="">
-                    <img src="image/img004.jpg" alt="">
+                    <img class="slider_item" src="image/img001.jpg" alt="">
+                    <img class="slider_item" src="image/img002.jpeg" alt="">
+                    <img class="slider_item" src="image/img003.jpg" alt="">
+                    <img class="slider_item" src="image/img004.jpg" alt="">
                 </div>
             </div>
             <div class="preBtn">

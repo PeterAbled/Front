@@ -6,11 +6,13 @@
             -khtml-user-select: none;
             -webkit-user-select: none;
             user-select: none;
+            background-color: rgb(39, 39, 39);
         }
-        a { text-decoration: none; color: black; }
+        a { text-decoration: none; color: white; }
         .container {
             width: auto;
             height: 1200px;
+            background-color: rgb(39, 39, 39);
         }
         .side {
             width: 20%;
@@ -20,7 +22,12 @@
             position: fixed;
             text-align: center;
             z-index: 9;
-            background-color:rgb(224, 224, 224);
+            background-color:rgb(54, 54, 54);
+        }
+        .info_Btn {
+            float: left;
+            position: absolute;
+            left: 10px;
         }
         .info Img {
             margin-top: 20px;
@@ -28,6 +35,7 @@
         }
         .info_Name {
             margin-top: 50px;
+            color: white;
         }
         #info_Name {
             transition: 3.5s;
@@ -35,24 +43,36 @@
         }
         .info_Left {
             margin-top: 30px;
-            margin-left: 30px;
-            float: left;
-            color: rgb(65, 65, 65);
+            /* margin-left: 10px; */
+            /* clear: both; */
+            /* float: left; */
+            color: rgb(188, 188, 188);
             font-size: 2vh;
-            text-align: left;
+            vertical-align: center;
+            /* text-align: center; */
+        }
+        .info_Left ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 10px;
+            left: -1vw;
         }
         .info_Right {
             margin-top: 30px;
             margin-left: 50px;
             float: left;
-            color: rgb(105, 105, 105);
+            color: rgb(131, 113, 89);
             font-size: 2vh;
             text-align: left;
+        }
+        .info_Right a {
+            color: rgb(131, 113, 89);
         }
         .header {
             width: 80%;
             height: auto;
             float: right;
+            background-color: rgb(39, 39, 39);
         }
         .content {
             margin-top: 50px;
@@ -60,6 +80,7 @@
             height: 800px;
             float: right;
             text-align: center;
+            background-color: rgb(39, 39, 39);
         }
         .screen {
             /* border: 2px solid black; */
@@ -80,7 +101,7 @@
             background-color: #1C1C1C;
             position: relative;
             z-index: 1;
-            color: #fff;
+            color: black;
             font-size: 3vw;
             line-height: 600px;
             text-shadow: 0 0 5vw #ff0000;
@@ -111,11 +132,11 @@
             height: 800px;
             float: right;
             text-align: center;
+            background-color: rgb(39, 39, 39);
         }
         .navi {
-            box-shadow: 0px 5px 10px gray;
+            box-shadow: 0px 5px 10px rgb(45, 45, 45);
             width: 100%;
-            background-color: white;
             height: 50px;
             position: fixed;
             top: 0px;
@@ -123,7 +144,7 @@
             z-index: 99999;
             /* transition: all 1.2s ease-out; */
             /* background: linear-gradient(270deg,  rgb(223,190,106), rgb(146,111,52), rgb(34,34,34), rgb(34,34,34)); */
-            background: linear-gradient(300deg,  rgb(255,255,255), rgb(255,255,255),rgb(0,0,0), rgb(255,255,255), rgb(255,255,255));
+            background: linear-gradient(300deg,  rgb(0,0,0), rgb(0,0,0),rgb(223,190,106), rgb(146,111,52), rgb(0,0,0), rgb(0,0,0));
             background-position: 1% 100%;
             background-size: 550% 550%;
         }
@@ -145,7 +166,7 @@
             transition: all 0.7s ease-out;
         }
         .navi ul li:hover {
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+            text-shadow: 5px 5px 5px rgba(255,255,255,0.8);
         }
         .album {
             width: 1200px;
@@ -176,7 +197,7 @@
             background-position: 99% 50%;
         }
         .preBtn button:disabled {
-            background-color: gray;
+            background-color: black;
         }
         .preBtn {
             margin-top: 10px;
@@ -188,11 +209,12 @@
             clear: both;
             width: 100px;
             height: 30px;
-            background: linear-gradient(300deg,  rgb(255,255,255), rgb(255,255,255),rgb(0,0,0), rgb(255,255,255), rgb(255,255,255));
+            background: linear-gradient(300deg,  rgb(0,0,0), rgb(0,0,0),rgb(223,190,106), rgb(146,111,52), rgb(0,0,0), rgb(0,0,0));
             background-position: 1% 100%;
-            background-size: 700% 700%;
+            background-size: 1000% 1000%;
             box-shadow: 2px 2px 3px black;
             margin-right: 30px;
+            color: white;
         }
         .prev:active {
             box-shadow: none;
@@ -201,11 +223,12 @@
             clear: both;
             width: 100px;
             height: 30px;
-            background: linear-gradient(300deg,  rgb(255,255,255), rgb(255,255,255),rgb(0,0,0), rgb(255,255,255), rgb(255,255,255));
+            background: linear-gradient(300deg,  rgb(0,0,0), rgb(0,0,0),rgb(223,190,106), rgb(146,111,52), rgb(0,0,0), rgb(0,0,0));
             background-position: 1% 100%;
-            background-size: 700% 700%;
+            background-size: 1000% 1000%;
             box-shadow: 2px 2px 3px black;
             margin-left: 30px;
+            color: white;
         }
         .next:active {
             box-shadow: none;
@@ -242,15 +265,14 @@
         .like_Btn:active {
             animation: bubble 1s 1s ease infinite;
         }
-
         @keyframes neon {
             0%,
             100% {
-              text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw       #FED128, .5vw .5vw .1vw #806914;
-              color: #FED128;
+              text-shadow: 0 0 1vw #6A0888, 0 0 3vw #6A0888, 0 0 10vw #6A0888, 0 0 10vw #6A0888, 0 0 .4vw       #820682, .3vw .3vw .1vw #92258f;
+              color: #af29a8;
             }
             50% {
-              text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw      #800E0B, .5vw .5vw .1vw #40340A;
-              color: #806914;
+              text-shadow: 0 0 .5vw #B404AE, 0 0 1.5vw #B404AE, 0 0 5vw #B404AE, 0 0 5vw #B404AE, 0 0 .2vw      #B404AE, .3vw .3vw .1vw #6b15bb;
+              color: #ab1bb3;
             }
           }
