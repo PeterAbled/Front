@@ -1,11 +1,12 @@
 let curPos = 0;
 let position = 0;
 let like = 0;
-const SLIDE_WIDTH = 1200; // 슬라이드 시 넘어갈 화면 크기
+const SLIDE_WIDTH = 1450; // 슬라이드 시 넘어갈 화면 크기
 const prevBtn = document.querySelector(".prev")
 const nextBtn = document.querySelector(".next")
 const slides = document.querySelector(".slideShow")
 const likeBtn = document.querySelector(".like_Btn")
+let slideIndex = document.querySelector(".slide_item");
 
 function prev() {
   if(curPos > 0) {
@@ -19,17 +20,22 @@ function prev() {
   }
 }
 function next() {
-  if(curPos < 3) {
+  if(curPos < 5) {
     prevBtn.removeAttribute("disabled")
     position -= SLIDE_WIDTH;
     slides.style.transform = `translateX(${position}px)`;
     curPos = curPos + 1;
   }
-  if(curPos == 3) {
+  if(curPos == 5) {
     nextBtn.setAttribute('disabled', 'true');
   }
 }
-
+function slideBar() {
+  const SBPos = document.querySelector(".side")
+  if(SB == 0){
+    SBPos.style.transform = `translateX{&(Posit)}`
+  }
+}
 function like_Btn() {
   const name = document.querySelector("#name");
   if(like == 0) {

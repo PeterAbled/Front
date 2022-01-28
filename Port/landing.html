@@ -21,10 +21,10 @@
             </div>
         </div>
         <div class="info_Left">
-            <ul>
-                <li><i class="fas fa-mail-bulk fa-2x"></i></li>
-                <li><i class="fab fa-github-alt fa-2x"></i></li>
-                <li><i class="fab fa-instagram fa-2x"></i></li>
+            <ul class="item_Index">
+                <li><a href="mailto:spem361@naver.com" class="info_item"><i class="fas fa-mail-bulk fa-3x"></i></a></li>
+                <li><a href="https://github.com/PeterAbled/Front" target="blank" class="info_item"><i class="fab fa-github-alt fa-3x"></i></a></li>
+                <li><a href="https://instagram.com/xx_mino_k" target="blank" class="info_item"><i class="fab fa-instagram fa-3x"></i></a></li>
             </ul>
         </div>
         <!-- <div class="info_Right">
@@ -35,20 +35,7 @@
     <div class="container">
         <div class="navi">
             <ul>
-                <li><button class="info_Btn" onclick="ONNO()">IN</button></li>
-                <script>
-
-                    let sideOF = 0;
-                    let sidePos = 0;
-                    const inBtn = document.querySelector("info_Btn")
-                    const sideBar = document.querySelector(".side")
-                    
-                    function ONNO() {
-                      if(sideOF == 0){
-                        sideBar.setAttribute('transform', 'translateX(30px)')
-                        sideOF += 1;
-                      }
-                    }</script>
+                <li><button class="info_Btn">IN</button></li>
                 <li><a href="loading.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Service</a></li>
@@ -59,29 +46,36 @@
             <div class="album">
                 <div class="slideShow">
                     <img class="slider_item" src="image/img001.jpg" alt="">
-                    <img class="slider_item" src="image/img002.jpeg" alt="">
+                    <img class="slider_item" src="image/img002.jpg" alt="">
                     <img class="slider_item" src="image/img003.jpg" alt="">
                     <img class="slider_item" src="image/img004.jpg" alt="">
+                    <img class="slider_item" src="image/img005.jpg" alt="">
+                    <img class="slider_item" src="image/img006.jpg" alt="">
                 </div>
             </div>
-            <div class="preBtn">
+            <div class="preBtn" id="service">
                 <button class="prev">PREV</button>
                 <button class="next">NEXT</button>
             </div>
             <script type="text/javascript" src="landing.js"></script>
         </div>
-        <div class="content" id="service">
+        <div class="content">
             <div class="screen">
                 <div class="screen1_1">
                     <p>OPEN</p>
                 </div>
                 <div class="screen1_2">
-                    <img src="image/img005.jpg">
+                    <h1>본문</h1>
+                    <p>피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
+                    
+                    <p>체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.</p>                    
                 </div>
             </div>
             <div class="screen1_text">
-                <h1>Mr. Son</h1>
-                <p>Lorem Inpum, Dolor abdius</p>
+                <!-- <h1>본문</h1>
+                <p>국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다. 이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다.</p>
+
+                <p>지방의회의 조직·권한·의원선거와 지방자치단체의 장의 선임방법 기타 지방자치단체의 조직과 운영에 관한 사항은 법률로 정한다. 모든 국민은 능력에 따라 균등하게 교육을 받을 권리를 가진다.</p> -->
             </div>
         </div>
         <div class="footer" id="contact">

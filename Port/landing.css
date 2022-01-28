@@ -29,6 +29,9 @@
             position: absolute;
             left: 10px;
         }
+        .info_Btn:active .side {
+            transform: translateX(350px);
+        }
         .info Img {
             margin-top: 20px;
             width: 160px;
@@ -43,19 +46,19 @@
         }
         .info_Left {
             margin-top: 30px;
-            /* margin-left: 10px; */
-            /* clear: both; */
-            /* float: left; */
             color: rgb(188, 188, 188);
             font-size: 2vh;
             vertical-align: center;
-            /* text-align: center; */
+        }
+        .info_Left ul {
+            margin-left: -3vw;
         }
         .info_Left ul li {
             list-style-type: none;
             display: inline-block;
             margin: 10px;
             left: -1vw;
+            transition: all 1.2s ease-out;
         }
         .info_Right {
             margin-top: 30px;
@@ -89,8 +92,11 @@
             height: 600px;
             overflow: hidden;
             transition: all 2s ease-out;
-            position: absolute;
+            position: relative;
             margin-left: 5vw;
+            background-image: url(image/screen001.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .screen1_1 {
             cursor: pointer;
@@ -113,12 +119,10 @@
             transform: translateX(350px);
         }
         .screen1_2 {
-            position: absolute;
             clear: both;
-        }
-        .screen1_2 img {
-            width: 350px;
-            height: 600px;
+            display: block;
+            position: absolute;
+            padding: 3vw;
         }
         .screen1_text {
             text-align: left;
@@ -169,20 +173,16 @@
             text-shadow: 5px 5px 5px rgba(255,255,255,0.8);
         }
         .album {
-            width: 1200px;
+            width: 1450px;
             overflow: hidden;
             margin: 0 auto;
             border-radius: 10px;
         }
         .slideShow {
-            margin-top: 120px;
+            margin-top: 70px;
             position: relative;
             display: flex;
             transition: ease-in-out 1s;
-        }
-        .slideShow img {
-            width: 1200px;
-            height: 600px;
         }
         /* .preBtn button, .preBtn button:active, .preBtn button:focus {
             width: 100px;
@@ -262,9 +262,6 @@
         .like_content .like_Btn .fa {
             margin-right: 5px;
         }
-        .like_Btn:active {
-            animation: bubble 1s 1s ease infinite;
-        }
         @keyframes neon {
             0%,
             100% {
@@ -276,3 +273,13 @@
               color: #ab1bb3;
             }
           }
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(-1px);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            
+        }
