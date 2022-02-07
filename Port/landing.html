@@ -12,7 +12,7 @@
 <body>
     <div class="side">
         <div class="info">
-            <div class="info_Name"><h2>Hello, I am <i style="font-size:30px" id="name">Peter</i></h2></div>
+            <div class="info_Name"><h2>Hello, I am <i style="font-size:30px">Peter</i></h2></div>
             <img src="image/side006.png" id="info_Name" alt="미모티콘">
             <div class="like_content">
                 <button class="like_Btn">
@@ -20,22 +20,34 @@
                 </button>
             </div>
         </div>
-        <div class="info_Left">
+        <div class="sinf">
             <ul class="item_Index">
                 <li><a href="mailto:spem361@naver.com" class="info_item"><i class="fas fa-mail-bulk fa-3x"></i></a></li>
                 <li><a href="https://github.com/PeterAbled/Front" target="blank" class="info_item"><i class="fab fa-github-alt fa-3x"></i></a></li>
                 <li><a href="https://instagram.com/xx_mino_k" target="blank" class="info_item"><i class="fab fa-instagram fa-3x"></i></a></li>
             </ul>
         </div>
-        <!-- <div class="info_Right">
-            <a href="tel:01044642462"><p>010 - 4464 - 2462</p></a>
-            <a href="mailto:spem361@naver.com"><p>spem361@naver.com</p></a>
-        </div> -->
     </div>
     <div class="container">
         <div class="navi">
             <ul>
-                <li><button class="info_Btn">IN</button></li>
+                <li><img src="image/book_mark.png" width="25px" class="info_Btn" onclick="sideOF()"></li>
+                <script lang="javascript">
+                    const SB = document.querySelector(".side");
+                    let bar = 0;
+
+                    function sideOF() {
+                        if(bar == 0){
+                            SB.style.transition = `1.2s`;
+                            SB.style.transform = `translateX(300px)`;
+                            bar = 1;
+                        } else if(bar == 1){
+                            SB.style.transition = `1.2s`;
+                            SB.style.transform = `translateX(0)`;
+                            bar = 0;
+                        }
+                    }
+                </script>
                 <li><a href="loading.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Service</a></li>
@@ -44,13 +56,13 @@
         </div>
         <div class="header" id="about">
             <div class="album">
-                <div class="slideShow">
-                    <img class="slider_item" src="image/img001.jpg" alt="">
-                    <img class="slider_item" src="image/img002.jpg" alt="">
-                    <img class="slider_item" src="image/img003.jpg" alt="">
-                    <img class="slider_item" src="image/img004.jpg" alt="">
-                    <img class="slider_item" src="image/img005.jpg" alt="">
-                    <img class="slider_item" src="image/img006.jpg" alt="">
+                <div class="slideShow clearfix">
+                    <img class="slide_item slide01" src="image/img001.jpg" alt="">
+                    <img class="slide_item slide02" src="image/img002.jpg" alt="">
+                    <img class="slide_item slide03" src="image/img003.jpg" alt="">
+                    <img class="slide_item slide04" src="image/img004.jpg" alt="">
+                    <img class="slide_item slide05" src="image/img005.jpg" alt="">
+                    <img class="slide_item slide06" src="image/img006.jpg" alt="">
                 </div>
             </div>
             <div class="preBtn" id="service">
@@ -60,49 +72,37 @@
             <script type="text/javascript" src="landing.js"></script>
         </div>
         <div class="content">
-            <div class="screen1">
+            <div class="screen1" onclick="OPEN1()">
                 <div class="screen1_1">
-                    <p onclick="OPENfst()">OPEN</p>
+                    <h1>『죄와 벌』</h1>
                     <script lang="javascript">
                         const slideItem1 = document.querySelector(".screen1_1")
                         
-                        function OPENfst() {
-                            slideItem1.style.transform = `translateX(350px)`;
+                        function OPEN1() {
+                            slideItem1.style.transition = `2.5s`;
+                            slideItem1.style.transform = `translateX(-360px)`;
                         }
                     </script>
                 </div>
-                <div class="screen1_2">
-                    <h1>본문</h1>
-                    <p>피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
-                    
-                    <p>체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.</p>                    
-                </div>
-            </div>
-            <div class="screen1_text">
-                <h1>본문</h1>
-                <p>국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다. 이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다.</p>
-
-            </div>
-            <div class="screen2">
-                <div class="screen2_1">
-                    <p onclick="OPENsnd()">OPEN</p>
+                <div class="screen1_2" onclick="OPEN2()"></div>
                     <script lang="javascript">
-                        const sildeItem2 = document.querySelector(".screen2_1")
-
-                        function OPENsnd() {
-                            sildeItem2.style.transform = `translate(-350px)`;
+                        const slideItem2 = document.querySelector(".screen1_2")
+                        
+                        function OPEN2() {
+                            slideItem2.style.transition = `2.5s`;
+                            slideItem2.style.transform = `translateX(-360px)`;
                         }
                     </script>
+                <div class="screen1_3">
+                    <h1>도스토옙스키</h1><br>
+                    <p>1866년 잡지 《러시아 통보(通報)》에 발표된 세계 문학 걸작의 하나로 한국에서도 애독되는 작품이다. 근대 도시의 양상을 배경으로, 작중의 하급 관리 마르멜라도프의 말대로 ‘아무데도 갈 데가 없는’ 사람들로 가득찬 상트페테르부르크의 뒷거리가 무대이다.</p>
                 </div>
-                <div class="screen1_2">
-                    <h1>본문</h1>
-                    <p>피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
-                    
-                    <p>체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.</p>                    
-                </div><br>
             </div>
             <div class="screen1_text">
-                <p>지방의회의 조직·권한·의원선거와 지방자치단체의 장의 선임방법 기타 지방자치단체의 조직과 운영에 관한 사항은 법률로 정한다. 모든 국민은 능력에 따라 균등하게 교육을 받을 권리를 가진다.</p>
+                <h1 style="font-size: 60px">줄거리</h1><br>
+                <p>가난한 대학생 출신인 라스콜리니코프는 악랄하기로 소문난 전당포 노파 알료나와 그녀의 여동생 리자베타를 도끼로 살해하고, 계속해서 이 범죄를 자신의 사고에 맞춰 자기합리화하려고 애를 쓴다. 그러나 소냐의 가정을 알게 되고 여동생인 두냐의 혼사에 관여하게 되면서 그는 양심의 가책을 느끼게 되고 마침내 소냐의 설득과 도움에 힘입어 자수하게 된다. 짧아보일 수 있겠지만, 중간중간 주변인물들의 이야기도 삽입되는 등 실제로는 굉장히 방대한 이야기를 포함하고 있다. 사실 이는 도스토옙스키 소설의 전체적인 특징이다.</p><br>
+                <p>결말에 대한 비판적 의견도 있는데, 소설 속에 나타난 라스콜리니코프의 성격상 자수하는 것까지는 가능할지 몰라도 회개하는 것은 억지로 끼워 맞춘 엔딩이라고 말하기도 한다. 다만 직접적으로 라스콜리니코프가 회개했다고 언급되지는 않았으며 단순히 그런 암시를 주는 것일 뿐이기 때문에 그렇게 비판하기도 힘들다.</p><br>
+                <p>작품 속에서 라스콜리니코프가 노파를 죽이는 이유는 단순히 돈을 위해서가 아니다. 그는 세상 사람들이 범인(凡人, 평범한 사람)과 비범인(非凡人, 평범하지 않은 사람)으로 나뉜다고 생각하는데, 자기 자신이 비범인인지를 시험하기 위하여 죽였다고 한다. 이러한 내용을 통해 작가는 맹목적인 자기합리화와 영웅주의적 사고관을 비판하고 있다. 결국 그는 노파의 동생을 죽인 순간 자신의 논리의 모순에 빠져 반쯤 정신이 나갔다.</p>
             </div>
         </div><br>
         <div class="footer" id="contact">
