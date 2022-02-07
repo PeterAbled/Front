@@ -14,7 +14,6 @@
         a { text-decoration: none; color: white; }
         .container {
             width: auto;
-            height: 1200px;
             /* background-color: rgb(243, 236, 227); */
         }
         .side {
@@ -79,7 +78,7 @@
         .content {
             margin-top: 50px;
             width: 100%;
-            height: 800px;
+            height: auto;
             float: right;
             text-align: center;
             /* background-color: rgb(243, 236, 227); */
@@ -153,7 +152,6 @@
             text-align: left;
             font-size: 18px;
             position: absolute;
-            display: inline-block;
         }
         .screen1_text h1 {
             text-align: center;
@@ -163,12 +161,101 @@
             /* color: rgb(182, 182, 182); */
             color: white;
         }
+        .screen2 {
+            /* border: 1px solid gray; */
+            box-shadow: 5px 7px 10px rgb(12, 12, 12);
+            border-radius: 10px;
+            width: 350px;
+            height: 600px;
+            overflow: hidden;
+            transition: all 2s ease-out;
+            position: relative;
+            margin-left: 10%;
+            background-image: url(image/screen002.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .screen2_1 {
+            box-shadow: 5px 7px 10px rgb(12, 12, 12);
+            cursor: pointer;
+            float: left;
+            width: 350px;
+            height: 600px;
+            /* transition: all 0.5s ease-out; */
+            background-image: url(image/screen001.jpg);
+            position: relative;
+            z-index: 5;
+            color: black;
+            font-size: 30px;
+            line-height: 600px;
+            /* animation: neon 1s ease infinite;
+            -moz-animation: neon 1s ease infinite;
+            -webkit-animation: neon 1s ease infinite; */
+            color: white;
+            text-shadow: 3px 3px 7px black;
+            /* text-shadow: 0 0 .5vw #bbc4c4, 0 0 1.5vw #abc8ca, 0 0 5vw #abc8ca, 0 0 5vw #abc8ca, 0 0 .2vw #abc8ca, .3vw .3vw .1vw #6a97af;
+            color: #769cb1; */
+        }
+        .screen2_2 {
+            box-shadow: 5px 7px 10px rgb(12, 12, 12);
+            clear: both;
+            cursor: pointer;
+            width: 350px;
+            height: 600px;
+            background-image: url(image/screen002.jpg);
+            background-size: cover;
+            display: block;
+            position: absolute;
+            padding: 20px;
+            z-index: 4;
+        }
+        .screen2_3 {
+            font-size: 20px;
+            clear: both;
+            display: block;
+            position: absolute;
+            width: 350px;
+            height: 600px;
+            padding: 20px;
+            color: white;
+            background-image: url(image/screen004.jpg);
+            text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 5px black, 0 0 6px black;
+            z-index: 3;
+        }
+        .screen2_text {
+            margin-left: -30%;
+            padding-right: 10%;
+            display: inline-block;
+            text-align: left;
+            font-size: 18px;
+            position: absolute;
+        }
+        .screen2_text h1 {
+            text-align: center;
+            text-shadow: 0 0 2px white, 0 0 3px white;
+        }
+        .screen2_text p {
+            /* color: rgb(182, 182, 182); */
+            color: white;
+        }
+        .c_1 {
+            background: rgba(144, 144, 144, .6);
+            padding: 50px;
+            height: 700px;
+        }
+        .c_2 {
+            margin-top: 50px;
+            background: rgba(144, 144, 144, .6);
+            padding: 50px;
+            height: 700px;
+        }
         .footer {
             margin-top: 50px;
             width: 100%;
-            height: 800px;
-            float: right;
+            clear: both;
             text-align: center;
+            display: inline;
             /* background-color: rgb(243, 236, 227); */
         }
         .navi {

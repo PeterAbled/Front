@@ -109,3 +109,6 @@ if (curIndex === slideLen - 1) {
 }, 5000);
 
 init();
+
+var SB1 = document.querySelector('.screen1_1');
+SB1.element.transform = "rotate(20deg)";
