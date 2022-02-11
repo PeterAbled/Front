@@ -1,0 +1,82 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: gray;
+}
+a {
+    color: rgb(131, 131, 131);
+}
+a:hover {
+    color: rgb(46, 46, 46);
+}
+.container {
+    width: 80%;
+    border-top: 30px solid rgb(80, 14, 14);
+    border-bottom: 30px solid rgb(80, 14, 14);
+    background-color: white;
+    box-shadow: 10px 10px 5px black;;
+}
+.header {
+    width: 100%;
+    padding: 100px;
+}
+.profile_picture {
+    width: 250px;
+    border-radius: 50%;
+    left: 30px;
+}
+.profile_name {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 60px;
+    line-height: 1.5em;
+}
+.profile_name p {
+    letter-spacing: -7px;
+    font-size: 50px;
+}
+.profile_info {
+    float: right;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    line-height: 1em;
+    font-family: '마루 부리OTF';
+}
+.profile_item {
+    font-size: 20px;
+    color: rgb(122, 122, 122)
+}
+.content {
+    width: 100%;
+    clear: both;
+}
+.skill {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.skill::before {
+    content: "";
+    flex-grow: 1;
+    background: rgba(146, 8, 8, 0.7);
+    height: 10px;
+}
+.skill::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(146, 8, 8, 0.7);
+    height: 10px;
+}
+.item1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20px;
+}

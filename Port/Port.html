@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+    <link rel="stylesheet" type="text/css" href="Port.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>Port</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="profile_picture" src="image/Profile.jpg" onclick="picture_scale()">
+            <script lang="javascript">
+                const picture_scaled = document.querySelector(".profile_picture");
+                let proscale = 0;
+
+                function picture_scale() {
+                    if(proscale == 0) {
+                        picture_scaled.style.borderRadius = `0%`;
+                        picture_scaled.style.transition = `1.2s`;
+                        picture_scaled.style.transform = `scale(2)`;
+                        proscale = 1;
+                    } else if(proscale == 1) {
+                        picture_scaled.style.borderRadius = `100%`;
+                        picture_scaled.style.transition = `1.2s`;
+                        picture_scaled.style.transform = `scale(1)`;
+                        proscale = 0;
+                    }
+                }
+            </script>
+            <div class="profile_name">
+                <h1>PARK<br><span class="color_red">PETER</span></h1>
+                <p><strong>SOFTWARE ENGINEER</strong></p>
+                <script lang="javascript">
+                const color_red = document.querySelector(".color_red");
+
+                color_red.style.color = `red`;
+            </script>
+            </div>
+            <div class="profile_info">
+                <p><i class="fa fa-phone"></i> 연락처</p><p class="profile_item">010-4464-2462</p>
+                <p><i class="fa fa-envelope"></i> 이메일</p><p class="profile_item">spem361@naver.com</p>
+                <p><i class="fab fa-github-alt"></i> 사이트</p><p class="profile_item">github.com/PeterAbled</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="skill" id="skill">
+                <h2>&nbsp;&nbsp;<a href="#skill" alt="#"><i class="fa fa-paperclip"></i></a> SKILL&nbsp;&nbsp;</h2>
+            </div>
+            <div class="item1">
+            </div>
+            <div class="skill" id="project">
+                <h2>&nbsp;&nbsp;<a href="#project" alt="#"><i class="fa fa-paperclip"></i></a> PROJECT&nbsp;&nbsp;</h2>
+            </div>
+            <div class="skill" id="education">
+                <h2>&nbsp;&nbsp;<a href="#education" alt="#"><i class="fa fa-paperclip"></i></a> EDUCATION&nbsp;&nbsp;</h2>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

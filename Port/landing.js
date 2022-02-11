@@ -110,5 +110,9 @@ if (curIndex === slideLen - 1) {
 
 init();
 
-var SB1 = document.querySelector('.screen1_1');
-SB1.element.transform = "rotate(20deg)";
+var scr1 = document.querySelector('.screen1_1 h1');
+var scrp = document.querySelector('.screen1_1 p');
+var scr2 = document.querySelector('.screen2_1 h1');
+
+scr1.style.color = `#8E5E2F`;
+scr2.style.color = `#49441F`;
