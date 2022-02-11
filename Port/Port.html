@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <img class="profile_picture" src="image/Profile.jpg" onclick="picture_scale()">
+            <img class="profile_picture" src="https://github.com/PeterAbled/Front/blob/main/Port/image/Profile.jpg?raw=true" onclick="picture_scale()">
             <script lang="javascript">
                 const picture_scaled = document.querySelector(".profile_picture");
                 let proscale = 0;
@@ -50,16 +50,63 @@
             <div class="skill" id="skill">
                 <h2>&nbsp;&nbsp;<a href="#skill" alt="#"><i class="fa fa-paperclip"></i></a> SKILL&nbsp;&nbsp;</h2>
             </div>
-            <div class="item1">
+            <div class="skilled">
+                <img src="image/HTML5.png">
+                <img src="image/CSS3.png">
+                <img src="image/JAVASCRIPT.png">
+                <img src="image/REACT.png">
+            </div>
+            <div class="skilled">
+                <img src="image/PHOTOSHOP.png">
+                <img src="image/EXCEL.png">
+                <img src="image/POWERPOINT.png">
+            </div>
+            <div class="progress">
+                <i class="fab fa-html5 fa-2x" onclick="progrss1()"></i>
+                <progress value="" max="100" class="progress_item1"></progress><br>
+                <i class="fab fa-css3-alt fa-2x" onclick="progrss2()"></i>
+                <progress value="" max="100" class="progress_item2"></progress><br>
+                <i class="fab fa-python fa-2x" onclick="progrss3()"></i>
+                <progress value="" max="100" class="progress_item3"></progress><br>
+                <i class="fab fa-js-square fa-2x" onclick="progrss4()"></i>
+                <progress value="" max="100" class="progress_item4"></progress><br>
+                <i class="fab fa-react fa-2x" onclick="progrss5()"></i>
+                <progress value="" max="100" class="progress_item5"></progress><br>
+                <script lang="javascript">
+                    function progrss1() {
+                        document.querySelector(".progress_item1").value = `70`;
+                    }
+                    function progrss2() {
+                        document.querySelector(".progress_item2").value = `60`;
+                    }
+                    function progrss3() {
+                        document.querySelector(".progress_item3").value = `40`;
+                    }
+                    function progrss4() {
+                        document.querySelector(".progress_item4").value = `50`;
+                    }
+                    function progrss5() {
+                        document.querySelector(".progress_item5").value = `20`;
+                    }
+                </script>
+            </div>
+            <div class="skilled">
+                <img src="image/PYTHON.png">
+                <img src="image/MySQL.png">
+                <img src="image/JAVA.png">
             </div>
             <div class="skill" id="project">
                 <h2>&nbsp;&nbsp;<a href="#project" alt="#"><i class="fa fa-paperclip"></i></a> PROJECT&nbsp;&nbsp;</h2>
             </div>
+            <h2>PROJECT 내역</h2>
             <div class="skill" id="education">
                 <h2>&nbsp;&nbsp;<a href="#education" alt="#"><i class="fa fa-paperclip"></i></a> EDUCATION&nbsp;&nbsp;</h2>
             </div>
+            <h2>컴퓨터공학과</h2>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <p>Copyright © 2022 Peter</p>
+        </div>
     </div>
 </body>
 </html>
