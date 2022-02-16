@@ -7,38 +7,16 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
     <link rel="stylesheet" type="text/css" href="Port.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script>window.onload = () => {}</script>
     <title>Port</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <img class="profile_picture" src="https://github.com/PeterAbled/Front/blob/main/Port/image/Profile.jpg?raw=true" onclick="picture_scale()">
-            <script lang="javascript">
-                const picture_scaled = document.querySelector(".profile_picture");
-                let proscale = 0;
-
-                function picture_scale() {
-                    if(proscale == 0) {
-                        picture_scaled.style.borderRadius = `0%`;
-                        picture_scaled.style.transition = `1.2s`;
-                        picture_scaled.style.transform = `scale(2)`;
-                        proscale = 1;
-                    } else if(proscale == 1) {
-                        picture_scaled.style.borderRadius = `100%`;
-                        picture_scaled.style.transition = `1.2s`;
-                        picture_scaled.style.transform = `scale(1)`;
-                        proscale = 0;
-                    }
-                }
-            </script>
             <div class="profile_name">
                 <h1>PARK<br><span class="color_red">PETER</span></h1>
                 <p><strong>SOFTWARE ENGINEER</strong></p>
-                <script lang="javascript">
-                const color_red = document.querySelector(".color_red");
-
-                color_red.style.color = `red`;
-            </script>
             </div>
             <div class="profile_info">
                 <p><i class="fa fa-phone"></i> 연락처</p><p class="profile_item">010-4464-2462</p>
@@ -62,33 +40,26 @@
                 <img src="image/POWERPOINT.png">
             </div>
             <div class="progress">
-                <i class="fab fa-html5 fa-2x" onclick="progrss1()"></i>
-                <progress value="" max="100" class="progress_item1"></progress><br>
-                <i class="fab fa-css3-alt fa-2x" onclick="progrss2()"></i>
-                <progress value="" max="100" class="progress_item2"></progress><br>
-                <i class="fab fa-python fa-2x" onclick="progrss3()"></i>
-                <progress value="" max="100" class="progress_item3"></progress><br>
-                <i class="fab fa-js-square fa-2x" onclick="progrss4()"></i>
-                <progress value="" max="100" class="progress_item4"></progress><br>
-                <i class="fab fa-react fa-2x" onclick="progrss5()"></i>
-                <progress value="" max="100" class="progress_item5"></progress><br>
-                <script lang="javascript">
-                    function progrss1() {
-                        document.querySelector(".progress_item1").value = `70`;
-                    }
-                    function progrss2() {
-                        document.querySelector(".progress_item2").value = `60`;
-                    }
-                    function progrss3() {
-                        document.querySelector(".progress_item3").value = `40`;
-                    }
-                    function progrss4() {
-                        document.querySelector(".progress_item4").value = `50`;
-                    }
-                    function progrss5() {
-                        document.querySelector(".progress_item5").value = `20`;
-                    }
-                </script>
+                <img src="image/HTML5.png" onclick="HTML5()">
+                <div class="prog">
+                    <div class="progs" id="progress_item1"></div><img src="image/progress.gif"">
+                </div>
+                <img src="image/CSS3.png" onclick="CSS3()">
+                <div class="prog">
+                    <div class="progs" id="progress_item2"></div><img src="image/progress.gif"">
+                </div>
+                <img src="image/JAVASCRIPT.png" onclick="JAVASCRIPT()">
+                <div class="prog">
+                    <div class="progs" id="progress_item3"></div><img src="image/progress.gif"">
+                </div>
+                <img src="image/PYTHON.png" onclick="PYTHON()">
+                <div class="prog">
+                    <div class="progs" id="progress_item4"></div><img src="image/progress.gif"">
+                </div>
+                <img src="image/PHOTOSHOP.png" onclick="PHOTOSHOP()">
+                <div class="prog">
+                    <div class="progs" id="progress_item5"></div><img src="image/progress.gif"">
+                </div>
             </div>
             <div class="skilled">
                 <img src="image/PYTHON.png">
@@ -108,5 +79,6 @@
             <p>Copyright © 2022 Peter</p>
         </div>
     </div>
+    <script type="text/javascript" src="Port.js"></script>
 </body>
 </html>

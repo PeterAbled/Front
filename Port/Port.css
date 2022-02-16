@@ -95,6 +95,8 @@ body {
 .skilled img {
     width: 120px;
     height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .skilled:hover {
     transform: translateY(10px);
@@ -108,18 +110,52 @@ body {
     border-radius: 10px;
     margin-right: 50px;
 }
-.progress i {
-    margin: 10px;
+.progress img {
+    margin-right: 10px;
+    margin-top: 10px;
     cursor: pointer;
     width: 40px;
+    height: 40px;
+    transition: all .5s ease-in-out
 }
-progress {
+.progress img:hover {
+    color: #ff0000;
+    text-shadow: 0 3px 3px #424242;
+    transform: translateY(-5px);
+}
+.prog {
+    display: inline-block;
     position: relative;
-    width: 300px;
+    width: 80%;
+}
+.prog img {
+    width: 45px;
+    height: 30px;
+}
+.progs {
+    display: inline-block;
+    position: relative;
+    width: 0px;
+    height: 10px;
+    text-align: left;
+    font-family: '마루 부리OTF';
+    line-height: 2.5em;
+    background-image: url(image/progress2.gif);
+    background-size: cover;
 }
 .footer {
     background-color: #008b8b;
     text-align: center;
     font-family: '마루 부리OTF';
     font-size: 20px;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(-1px);
+    }
 }
