@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="image/icon-portfolio.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nanum+Gothic:wght@700&family=Rubik:ital,wght@0,300;0,900;1,500&display=swap" rel="stylesheet">
+    
+    <script>window.onload = () => {}</script>
+    <title>Peter Portfolio</title>
+</head>
+<body>
+    <div class="nav">
+        <p><img src="image/icon-portfolio.png" width="20px"> Peter Portfolio</p>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#motto">Motto</a></li>
+            <li><a href="#ability">Ability</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="project.html" target="blank">Test</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="profile_name">
+                <h1>PARK<br><span class="color_red">PETER</span></h1>
+                <p><strong>SOFTWARE ENGINEER</strong></p>
+            </div>
+            <div class="profile_info">
+                <p><i class="fa fa-phone"></i> Phone</p><p class="profile_item">010-4464-2462</p>
+                <p><i class="fa fa-envelope"></i> E-mail</p><p class="profile_item">spem361@naver.com</p>
+                <p><i class="fab fa-github-alt"></i> Archived</p><p class="profile_item">github.com/PeterAbled</p>
+                <p><i class="fa fa-graduation-cap"></i> Education<p class="profile_item">Hanyang Cyber Univercity</p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="board" id="motto">
+                <h2>&nbsp;&nbsp;<a href="#motto" alt="#"><i class="fa fa-paperclip"></i></a> Motto&nbsp;&nbsp;</h2>
+            </div>
+
+            <div class="brick_1">
+                <h2>“고인물이 아닌 흐르는 물이 되자.”</h2>
+                <p>현재에 안주하지 않으며, 상황에 맞춰 최적의 발전을 하는 개발자가 되겠습니다.</p>
+            </div>
+
+            <div class="board" id="ability">
+                <h2>&nbsp;&nbsp;<a href="#ability" alt="#"><i class="fa fa-paperclip"></i></a> Program ability&nbsp;&nbsp;</h2>
+            </div>
+
+            <div class="brick">
+                <div class="skill_1">
+                    <h2>Language</h2>
+                    <img src="image/HTML5.png">
+                    <img src="image/CSS3.png">
+                    <img src="image/JAVASCRIPT.png">
+                    <img src="image/PYTHON.png">
+                </div>
+                <div class="skill_2">
+                    <h2>Micro soft</h2>
+                    <img src="image/EXCEL.png">
+                    <img src="image/POWERPOINT.png">
+                </div>
+                <div class="progress">
+                    <img src="image/HTML5.png" onclick="HTML5()">
+                    <div class="prog">
+                        <div class="progs" id="progress_item1"></div>
+                    </div>
+                    <img src="image/CSS3.png" onclick="CSS3()">
+                    <div class="prog">
+                        <div class="progs" id="progress_item2"></div>
+                    </div>
+                    <img src="image/JAVASCRIPT.png" onclick="JAVASCRIPT()">
+                    <div class="prog">
+                        <div class="progs" id="progress_item3"></div>
+                    </div>
+                    <img src="image/PYTHON.png" onclick="PYTHON()">
+                    <div class="prog">
+                        <div class="progs" id="progress_item4"></div>
+                    </div>
+                    <img src="image/OFFICE.png" onclick="OFFICE()">
+                    <div class="prog">
+                        <div class="progs" id="progress_item5"></div>
+                    </div>
+                    <img src="image/PHOTOSHOP.png" onclick="PHOTOSHOP()">
+                    <div class="prog">
+                        <div class="progs" id="progress_item6"></div>
+                    </div>
+                </div>
+                <div class="skill_3">
+                    <h2>Adobe</h2>
+                    <img src="image/PHOTOSHOP.png">
+                </div>
+            </div>
+
+            <div class="board" id="experience">
+                <h2>&nbsp;&nbsp;<a href="#experience" alt="#"><i class="fa fa-paperclip"></i></a> Experience&nbsp;&nbsp;</h2>
+            </div>
+            <div class="exp1">
+                <div class="exp1_left">
+                    <p>2021.02</p>
+                    <p>2021.07</p>
+                    <p>2022.03</p>
+                </div>
+                <div class="exp1_right">
+                    <p>HTML5, CSS3, JAVASCRIPT 입문</p>
+                    <p>Python 언어 독학</p>
+                    <p>HYCU 컴퓨터공학과 진학</p>
+                </div>
+            </div>
+
+            <div class="board" id="project">
+                <h2>&nbsp;&nbsp;<a href="#project" alt="#"><i class="fa fa-paperclip"></i></a> Project&nbsp;&nbsp;</h2>
+            </div>
+            <div class="exp2">
+                <div class="exp2_left">
+                    <img src="image/web_por.png">
+                </div>
+                <div class="exp2_right">
+                    <h2>Web Design</h2>
+                    <p>기간 : 2개월</p>
+                </div>
+            </div>
+            <div class="exp2">
+                <div class="exp2_left"><a href="project.html" target="blank"><img src="image/web_por2.png" alt=""></a>
+                </div>
+                <div class="exp2_right">
+                    <h2>Web Coding</h2>
+                    <p>제작 중</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p><i>Copyright © 2022 Peter</i></p>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
